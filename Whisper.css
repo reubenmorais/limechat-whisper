@@ -1,7 +1,7 @@
 html.normal {
     color: #4b4b4b;
     background-color: white;
-    font: 12px/1.3em 'Lucida Grande' sans-serif;
+    font: 12px/1.3em 'Menlo' sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -58,12 +58,14 @@ body.normal .text + .event {
 }
 
 body.normal .sender {
-    padding: 0.4em 0;
+    padding: 0.4em 4px 0.4em 0;
     float: left;
     text-align: right;
     font-weight: bold;
     width: 130px;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 body.normal .line .message {
@@ -352,4 +354,18 @@ body.normal .message[type=debug_send] {
 
 body.normal .message[type=debug_receive] {
     color: #444;
+}
+.sender[first=false] {
+    color: #eee !important;
+    margin-right: 0;
+}
+.sender[first=false]:after {
+    content:"»"; color: black;
+    /*margin-right: 0.5ex;*/
+}
+body.normal .sender[type=myself]:after {
+    content: " ★";
+}
+body.normal [type=myself], body.normal .sender[type=myself] + .message {
+    background-color: #f5f5f5;
 }

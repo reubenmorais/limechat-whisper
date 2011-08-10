@@ -5,11 +5,16 @@ log-view:
     nickname-format: '%n'
     scroller-highlight-color: '#d33b54'
 
+input-text:
+  font-family: 'Menlo'
+  font-size: 12px
+
 member-list:
     font-family: 'Lucida Grande'
     font-size: 12
     color: '#444'
-    background-color: '#fff'
+    background-color: '#dee3e9'
+
     operator:
         color: '#000'
     selected:
@@ -21,7 +26,7 @@ member-list:
             bottom-color: '#445b73'
 
 server-tree:
-    background-color: '#fff'
+    background-color: '#dee3e9'
     highlight:
         color: '#d33b54'
     newtalk:
