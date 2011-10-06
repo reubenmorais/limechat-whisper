@@ -28,7 +28,7 @@ member-list:
 server-tree:
     background-color: '#dee3e9'
     highlight:
-        color: '#d33b54'
+        color: '#3b53d3'
     newtalk:
         color: '#d33b54'
     unread:
