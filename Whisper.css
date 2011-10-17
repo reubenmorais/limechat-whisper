@@ -101,6 +101,10 @@ body.normal .line .place {
     font-size: 12px;
 }
 
+body.normal .line .channel {
+    display: inline;
+}
+
 body.normal .event .time {
     margin: 1px 3px;
     float: right;
@@ -176,12 +180,18 @@ body.normal .line[type=action] .message {
 }
 
 body.normal .url {
+    display: inline;
     word-break: break-all;
 }
 
 body.normal .address {
+    display: inline !important;
     text-decoration: underline;
     word-break: break-all;
+}
+
+body.normal .effect {
+    display: inline !important;
 }
 
 body.normal .highlight {
@@ -290,8 +300,8 @@ body.normal .message[type=dcc_send_receive] {
     color: #153b7c;
 }
 
-body.normal .message[type=privmsg] {
-    
+body.normal .message[type=privmsg] span.effect {
+    position: relative;
 }
 
 body.normal .message[type=notice] {
